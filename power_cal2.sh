@@ -48,8 +48,8 @@ data_collection(){
 #fi
 
 #while read -p "Enter the total wattage of Rig: " watts && [ -z "$watts" ]; do :; done
-#while read -rp "Enter the total wattage of Rig: " watts && [ -z "$watts" ] && echo "Please try again"; do :; done
-while read -rp "Enter the total wattage of Rig: " watts && ! [[ -z "$watts =~ ^[0-9]+$}" ]] ; do then contine:; done
+while read -rp "Enter the total wattage of Rig: " watts && [ -z "$watts" ] && echo "Please try again"; do :; done
+#while read -rp "Enter the total wattage of Rig: " watts && ! [[ -z "$watts =~ ^[0-9]+$}" ]] ; do then contine:; done
 
 #while read -p "Enter the total wattage of Rig: " watts && [ -z "$watts" ] || [ -n ${watts//[0-9]/} ]; do :; done
 
